@@ -1,0 +1,14 @@
+3.6
+
+Sequence Container implementieren Datenstrukturen, die nacheinander aufgerufen werden können .
+
+Assoziative Container implementieren sortierte Daten Strukturen, die schnell durchsucht werden
+
+I Speichern der Punkte eines Polygons
+sequentiel
+
+II Zuordnung von Farbnamen und entsprechenden RGB-Werten
+sequentiel
+
+III FIFO-Warteschlange von Druckaufträge
+assoziativ

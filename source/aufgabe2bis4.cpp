@@ -17,7 +17,7 @@ int main(){
 		liste.pop_back();}
 
 	//vektor in den liste kopiert wird
-	std::vector<unsigned int> vektor(100);
+	std::vector<unsigned int> vektor(liste.size());
 	std::copy(std::begin(liste), std::end(liste), std::begin(vektor));
 
 	//ausgabe vektor
@@ -45,7 +45,7 @@ int main(){
     	
 	}
 
-	
+
 	std::cout <<"Haeufigkeit der Zahlen im Format zahl:haeufigkeit"<<std::endl;
 	for (int i = 0; i<=100;++i){
 		if (m[i]>0){

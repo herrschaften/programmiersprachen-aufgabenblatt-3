@@ -7,22 +7,19 @@
 class Circle{
 public:
 	Circle();
-	Circle(Vec2 const& ctr_, float r_);
+	Circle(float r_);
 	
-
-	//getter
-	float get_circumference() const;
-	float get_area() const;
-	float get_radius() const;
-	Vec2 get_center() const;
-
 	
 	//setter
 	void set_radius(float r_);
-	void set_center(Vec2 const& ctr_);
+
+	bool operator< (Circle const& a);
+	bool operator> (Circle const& a);
+	bool operator==(Circle const& a);
+
+
 
 private:
-	Vec2 ctr;
 	float r;
 
 };
