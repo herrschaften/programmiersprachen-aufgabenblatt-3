@@ -26,3 +26,7 @@ circle.cpp)
 add_executable(aufgabe10 aufgabe10.cpp)
 
 add_executable(aufgabe11 aufgabe11.cpp)
+
+add_executable(aufgabe13 
+circle.cpp
+aufgabe13.cpp)

@@ -9,6 +9,7 @@
 
 int main(){
 
+	//3.2
 	//liste mit 100 zufallszahlen
 	std::list<unsigned int> liste(100);
 	for(int i=0; i<100; i++){
@@ -23,6 +24,8 @@ int main(){
 	//ausgabe vektor
 	std::copy(vektor.begin(), vektor.end(), std::ostream_iterator<int>(std::cout, "\n"));
 
+
+	//3.3
 	//set= container sortiert ohne dopplete 
 	std::set<unsigned int> listeset(std::begin(liste), std::end(liste));
 	std::cout<< "Die Liste enthaelt " << listeset.size() <<" verschiedene Elemente"<<std::endl;
@@ -32,20 +35,22 @@ int main(){
 	std::cout<< "Folgende Zahlen zwischen 1 und 100 sind nicht in der Liste enthalten: "<<std::endl;
 	for (int i = 0; i <= 100; ++i) {
     	if (listeset.count(i) == false) {
-      std::cout << i << "\n";
+      		std::cout << i << "\n";
     	}
     }	
 
     
-    //
+    //3.4
 
+    //map m(key i, value) i zählt hoch und guckt für jeden wert wie oft er vorkommt 
+    //map: key einzig (1-100), value mehrfach moeglich (vorkommen)
 	std::map<int, int> m;
-  	for (int i = 0; i<=100;++i){
+  	for (int i = 0; i<=100; ++i){
     	m[i]=std::count(liste.begin(), liste.end(), i); //zaehlt vorkommen von i
     	
 	}
 
-
+	//zahlen ohne vorkommen abfangen und ausgabe
 	std::cout <<"Haeufigkeit der Zahlen im Format zahl:haeufigkeit"<<std::endl;
 	for (int i = 0; i<=100;++i){
 		if (m[i]>0){

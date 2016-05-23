@@ -4,8 +4,11 @@
 # include <algorithm>
 
 template<typename T>
+//& fuer schneller(refferenz) kein const weil getauscht wird und andere probleme die bei anwendung entstehen können
 void swap(T& a, T& b) 
 {
+
+	//temp wird initialisiert, weil a ansonsten ueberschrieben wird
 	T temp=a;
 	a=b;
 	b=temp;

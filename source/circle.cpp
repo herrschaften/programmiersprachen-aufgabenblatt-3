@@ -10,7 +10,7 @@ r {1.0f} {}
 Circle::Circle(float r_): 
 r {r_} {
 
-	assert (r_ <= 0.0f); 
+	//assert (r_ <= 0.0f); 
 }
 
 
